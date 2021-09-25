@@ -13,37 +13,17 @@
             margin: 10px;
         }
 
-        .background{
-            color: white;
-        }
-
-        h1.background{
-            color: yellow;
-        }
-
-        h2.background{
-            color: black;
-        }
-        
-        h2.background#unique{
-            color: black;
-        }
-
-        h3.background{
-            color: blueviolet;
-        }
-
-        span.background{
-            color: crimson;
+        div.parent {
+            background-color: darkorchid;
         }
 
     </style>
 </head>
 <body>
-   <h1 id="unique" class="background">heading one</h1>
-   <h2 class="background">heading two</h2>
-   <h2 class="background">second heading</h2>
-   <h3 class="background">heading three</h3>
-   <span class="background">i am span</span>
+    <div class="parent">
+        <div class="special">i am a div</div>
+        <div>i am second div</div>
+        <div>i am third div</div>
+    </div>
 </body>
 </html>
