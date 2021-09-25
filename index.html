@@ -13,17 +13,48 @@
             margin: 10px;
         }
 
-        div.parent {
-            background-color: darkorchid;
+        h2{
+            padding: 5px;
+            color: white;
+            background-color: green;
+        }
+
+        h2:hover{
+            background-color: indigo;
+            cursor: pointer;
+        }
+
+        div::selection{
+            background: line;
+        }
+
+        input:focus{
+            background-color: ivory;
+            color: red;
+            font-size: 2rem;
+        }
+
+        h2::after{
+            content: "i am after";
+            font-size: 0.5rem;
+            color: red;
+            position: relative;
+        }
+
+        h2::before{
+            content: "i am before";
+            font-size: 0.5rem;
+            color: red;
+            position: relative;
         }
 
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="special">i am a div</div>
-        <div>i am second div</div>
-        <div>i am third div</div>
-    </div>
+   <h2>i am a heading</h2>
+   <div>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, assumenda minus doloribus vero mollitia fuga doloremque sequi aut? Maxime nisi esse reiciendis pariatur nihil ea tempore placeat molestias, qui blanditiis!
+   </div>
+   <input type="text"/>
 </body>
 </html>
