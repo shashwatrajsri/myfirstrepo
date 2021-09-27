@@ -3,66 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Todo List</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        div.parent{
-            height: 500px;
-            background-color: black;
-        }
-
-        div.child{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: yellow;
-            animation: 1s move ease;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-
-        div.child-2{
-            width: 100px;
-            height: 100px;
-            margin-left: 100px;
-            border-radius: 50%;
-            background-color: yellow;
-            animation: 1s move ease;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-delay: 1s;
-        }
-      
-        @keyframes move {
-            0%{
-                transform: translateY(0vw);
-            }
-
-            50%{
-                transform: translate(300px, 200px);
-                background-color: violet;
-            }
-
-            100%{
-                transform: translateY(400px);
-                background-color: blue;
-            }
-        }
-
+       
     </style>
+</head>    
 <body>
-    <div class="parent">
-        <div class="child"></div>
-        <div class="child-2"></div>
-    </div>
+   <header></header>
 
+   <footer>
+       <div>
+           <a href="#">Shashwat Srivastava</a>
+       </div>
+       <div>
+           <a href="#">
+               <img class="social" src=".assets/images/github.png"
+               alt="" />
+           </a>
+           <a href="#">
+                <img class="social" src=".assets/images/instagram.png"
+                alt="" />
+           </a>
+           <a href="#">
+                <img class="social" src=".assets/images/linkedin.png" alt="" />
+           </a>
+       </div>
+   </footer>
 </body>
 </html>
