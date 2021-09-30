@@ -1,12 +1,12 @@
-var heading = document.getElementById('heading')
-var body = document.querySelector('body')
+var list = document.querySelector('ul')
 
+var arr = ['Go to gym' , 'cook oatmeal', 'eat']
 
+arr.push("complete assignment")
 
-heading.innerHTML= "i was added by JS"
-heading.style = "color:red;font-size:2rem"
-
-heading.classList.add("five")
-heading.classList.remove("one")
-
-body.classList.remove('dark')
+for(var i=0;i<arr.length;i++){
+    var element = document.createElement('li')
+    var textNode = document.createTextNode(arr[i])
+    element.appendChild(textNode) 
+    list.appendChild(element)
+}
