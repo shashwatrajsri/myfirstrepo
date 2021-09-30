@@ -1,8 +1,6 @@
-console.log(typeof "helloworld")
-console.log(typeof "d")
+var heading = document.getElementById('heading')
+var para = document.getElementsByClassName('para')
+var tags = document.getElementsByTagName('a')
+var query = document.querySelector('.para')
 
-console.log(typeof 1)
-console.log(typeof 453444635354)
-
-console.log(typeof true)
-console.log(typeof false)
+console.log(query)
