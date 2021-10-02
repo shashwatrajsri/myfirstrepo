@@ -6,9 +6,27 @@
 
 //greet('Shashwat',21)
 
-function add(a=0,b=0){
+//function add(a=0,b=0){
+    //var sum=a+b;
+    //return sum;
+//}
+
+/*var add = function (a=0,b=0){
     var sum=a+b;
     return sum;
 }
 
-console.log(add(10,20))
+console.log(add(10,20))*/
+
+var add = (a=0,b=0) => {
+    var sum = a + b
+    return sum
+}
+
+console.log(add(10, 20))
+
+
+
+
+
+
