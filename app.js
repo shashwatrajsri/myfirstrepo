@@ -1,59 +1,30 @@
-//function greet(name = 'john', age = 99){
-    //console.log(name,age)
-    //console.log('hey' + name + "your age is" age)
-    //console.log('hello')
+const a = document.querySelectorAll('input')[0]
+const b = document.querySelectorAll('input')[1]
+const add = document.querySelector('#add')
+const multiply = document.querySelector('#multiply')
+const resultbox = document.querySelector('.result')
 
-
-//greet('Shashwat',21)
-
-//function add(a=0,b=0){
-    //var sum=a+b;
-    //return sum;
-//}
-
-/*var add = function (a=0,b=0){
-    var sum=a+b;
-    return sum;
+const sum = () => {
+    const result = parseInt(a.value) + parseInt(b.value)  
+    resultbox.innerHTML =result
 }
 
-console.log(add(10,20))
-
-var add = (a=0,b=0) => {
-    return a+b
+const product = () => {
+    const result = parseInt(a.value) * parseInt(b.value)  
+    resultbox.innerHTML =result
 }
 
-var add = (a=0,b=0) => a+b
+const calculate = (event,operation) => {
+    console.log(event.target)
 
-console.log(add(10, 20))
-
-const greet = name => 'h1' + name
-console.log(greet('prabhakaran'))*/
-
-//var arr = ['go to the gym', 'eat food', 'clean house']
-/*for(var i=0;i<arr.length;i++){
-    console.log(arr[i])
-}*/
-
-//const greet = age => 'hello' + age
-//console.log(greet('Shashwat'))
-
-//var callbackfunction = (element, index)=>{
-    //console.log(element,index)
-//}
-
-//arr.forEach((element, index) => 
-    //console.log(element,index)
-//)
-
-var body= document.querySelector('body')
-var button= document.querySelector('button')
-
-const callbackfunc = (event) => {
-    body.classList.toggle('dark')
+    if(operation=='add'){
+        console.log('adding')
+    }else if(operation=='multiply'){
+        console.log('multiply')
+    }
 }
 
-button.addEventListener('click', callbackfunc)
-
-
+add.addEventListener('click', (event) => calculate(event,'add'))
+multiply.addEventListener('click', (event) => calculate(event,'multiply'))
 
 
