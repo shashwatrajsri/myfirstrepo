@@ -15,16 +15,28 @@ const product = () => {
 }
 
 const calculate = (event,operation) => {
-    console.log(event.target)
-
-    if(operation=='add'){
-        console.log('adding')
-    }else if(operation=='multiply'){
-        console.log('multiply')
+    //if(operation=='add'){
+        //console.log('adding')
+    //}else if(operation=='multiply'){
+        //console.log('multiply')
+    //}
+    switch(operation){
+        case "add":
+            resultbox.innerHTML= parseInt(a.value) + parseInt(b.value)
+            break
+        case "multiply":
+            resultbox.innerHTML= parseInt(a.value) * parseInt(b.value)
+            break
+        case "subtract":
+            resultbox.innerHTML= parseInt(a.value) - parseInt(b.value)
+            break
+        default:
+            resultbox.innerHTML= "not a valid operation"
     }
 }
 
 add.addEventListener('click', (event) => calculate(event,'add'))
 multiply.addEventListener('click', (event) => calculate(event,'multiply'))
+subtract.addEventListener('click', (event) => calculate(event,'subtract'))
 
 
