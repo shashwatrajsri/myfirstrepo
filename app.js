@@ -1,7 +1,20 @@
-let Name = new Promise((resolve,reject) => {
-    setTimeout(() => {
-        resolve('Shashwat')
-    },3000)
-})
+const table = document.querySelector('table')
+console.log(table)
 
-Name.then(name => {console.log(name)})
+
+
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
+.then(data => {
+    data.forEach(user => {
+        let newRow = document.createElement('tr')
+        let dataID = document.createElement('td')
+        let dataIDtextNode = document.createTextNode('user.id')
+        dataID.appendChild(dataIDtextNode)
+        newRow.appendChild(dataID)
+
+        table.appendChild(newRow)
+    })
+})
