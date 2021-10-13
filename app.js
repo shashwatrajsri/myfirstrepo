@@ -1,6 +1,7 @@
-const {add,subtract,multiply,divide}= require('./util')
+const path = require('path')
 
-add()
-subtract()
-multiply()
-divide()
+//console.log(path.resolve('./app.js'))
+
+//console.log(path.dirname('./temp/util.js')
+
+console.log(__dirname)
