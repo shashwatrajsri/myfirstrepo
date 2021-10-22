@@ -18,7 +18,6 @@ router.get('/all', (req, res) => {
             status: "FAILED"
         })
     }
-
 })
 
 
