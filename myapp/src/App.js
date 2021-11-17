@@ -1,5 +1,9 @@
-const secret = "I am a secret"
+const App = () => {
+    return (
+        <div className="App">
+            lorem100jhbjbjhjhbhbhhbhjlore
+        </div>
+    )
+}
 
-module.exports = secret
-
-//module.exports.secret = secret
+export default App;
